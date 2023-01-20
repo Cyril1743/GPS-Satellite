@@ -27,6 +27,8 @@ Then the most recent landsat imagery shows on the screen.
 Google Maps API and NASA Earth API
 
 ## Decomposition and Rough Breakdown of Tasks
+Alan and David: JavaScript
+Andrie, Emmanual, and Danielle : HTML and CSS
 
 ## Project Requirements
 
