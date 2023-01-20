@@ -20,6 +20,7 @@ When an address is submitted
 Then the most recent landsat imagery shows on the screen.
 
 ## Wireframe
+![WireFrame](https://user-images.githubusercontent.com/118854114/213608854-5f7f5dcb-80ae-4676-a90f-a9275e4bedb1.jpg)
 
 ## APIs to be Used
 
