@@ -28,7 +28,7 @@ Google Maps API and NASA Earth API
 
 ## Decomposition and Rough Breakdown of Tasks
 Alan and David: JavaScript
-Andrie, Emmanual, and Danielle : HTML and CSS
+Andrei, Emmanual, and Danielle : HTML and CSS
 
 ## Project Requirements
 
