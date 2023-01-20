@@ -6,18 +6,20 @@ NASA API + Maps API = search for location in google maps and pluglat and long in
 
 ## User Story & Acceptance Criteria
 
-User Story:
+```md
+- User Story:
 As a user
 I want to input an address
 So that I can see the most recent landsat imagery and view it.
 
-Acceptance Criteria:
+- Acceptance Criteria:
 Given a polish website/ui/application
 When I view the website
 Then there is an input box
 
 When an address is submitted
 Then the most recent landsat imagery shows on the screen.
+```
 
 ## Wireframe
 ![WireFrame](https://user-images.githubusercontent.com/118854114/213608854-5f7f5dcb-80ae-4676-a90f-a9275e4bedb1.jpg)
