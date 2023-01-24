@@ -1,22 +1,20 @@
-//varibles for map 
-// var map
-// var lat
-// var long
-// function initMap() {
-//     map = new google.maps.Map($("map")), {
-//         center : { lat: 37.0902, lng: 150.644},
-//         zoom: 2
-//     }
-// }
-// window.initMap = initMap;
-// export {lat, long}
-let map;
+//varibles for maps
+var map;
+var lat;
+var long;
+var searchInput = $("#search-bar").val()
+var searchButton = $("#search-button")
+
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -37.0902, lng: 95.7129 },
-    zoom: 8,
+    center: { lat: 39.060150, lng: -95.647301 },
+    zoom: 4,
   });
 }
 
 window.initMap = initMap;
+
+searchButton.on("click", function(){
+    
+})
