@@ -1,6 +1,7 @@
-//Import lon & lat variables from maps.js
+//1. Import lon & lat variables from maps.js
 import { lat, long } from "./maps.js";
-//
+
+//2. Concatenate lon & lat variables into a query string.
 
 //Example Query:
 //https://api.nasa.gov/planetary/earth/imagery?lon=100.75&lat=1.5&date=2014-02-01&api_key=DEMO_KEY
@@ -23,7 +24,7 @@ var nasaSearch =
 
 console.log(nasaSearch);
 
-//Use Fetch Request to ake finished nasaSearch string and send to NASA Earth API
+//3. Use Fetch Request to take finished nasaSearch string and send to NASA Earth API
 
 function getApi() {
   // Insert the API url to get a list of your repos
@@ -43,6 +44,7 @@ function getApi() {
         listItem.textContent = data[i].html_url;
 
         //Append the li element to the id associated with the ul element.
+        //Need to update which element in html is being appended.
         repoList.appendChild(listItem);
       }
     });
