@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- Tailwind Link -->
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
     <title>GPS Satellite</title>
 
 </head>
-<!--add Tailwind stilyng-->
-<div class="">
-<header classc="header">GPS Satellite</header>
-
-<div class="search-bar" id="search-bar"></div>
-
-<div class="">
-    
-    <main class="main-content">Main Content</main>git
-
-    <nav class="">Sidebar</nav>
-    <aside class="">Right Sidebar</aside>
-
-</div>
-
-
 
 <body>
-<div class="min-h-screen flex flex-col">
-    <header class="bg-black-200">GPS Satellite
-        <div class="search-bar" id="search-bar">Enter search address:</div>
-    </header>
-<!-- Main Page Columns -->
-<div class="flex-1 flex flex-col sm:flex-row"></div>
+    <div class="grid grid-rows-3 grid-cols-12 gap-2 h-screen bg-gray-100">
+        <header class="row-auto col-span-12 bg-gray-300">
+            GPS Satellite
+            <div class="search-bar" id="search-bar">Enter search address:</div>
+        </header>
+    <!-- Main Page Columns -->
+        <!-- Left side  - nav -->
+        <nav class="col-span-1 bg-gray-400">
+            <!-- left sidebar text here, if any -->
+        </nav>
 
-        <main class="flex-1 bg-blue-100">Main Content</main>
-        
-        <nav class="order-first sm:w-32 bg-white-200">Sidebar</nav>
+        <!-- Main / center content here -->
+        <main class="col-span-8 bg-gray-500">
+            Main Content
+        </main>
 
-        <aside class="sm:w-32 bg-white-200">Right Sidebar</aside>
+        <!-- Right sidebar - aside -->
+        <aside class="row-auto col-span-12 bg-gray-300">
+            <!-- Right sidebar text here, if any -->
+        </aside>
     </div>
-</div>
-<footer class="bg-gray-100">Footer</footer>
+    <!-- Footer -->
+    <footer class="row-auto col-span-12 bg-gray-300">
+        Footer
+    </footer>
 
     <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAc-vn35rr4MOnhvddt4qmf0EicQ-PUtM&callback=initMap"defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAc-vn35rr4MOnhvddt4qmf0EicQ-PUtM&callback=initMap"
+        defer></script>
     <script src="./assets/script.js"></script>
 
 </body>
+
 </html>
