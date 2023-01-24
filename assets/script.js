@@ -43,6 +43,7 @@ function getApi() {
         listItem.textContent = data[i].html_url;
 
         //Append the li element to the id associated with the ul element.
+        //Need to update which element in html is being appended.
         repoList.appendChild(listItem);
       }
     });
