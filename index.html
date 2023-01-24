@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  rel="stylesheet" href="./assets/style.css">
-    <link href=""  rel=""
     <title>GPS Satellite</title>
 
 </head>
@@ -27,7 +26,25 @@
 
 
 <body>
+<div class="min-h-screen flex flex-col">
+    <header class="bg-black-200">GPS Satellite
+        <div class="search-bar" id="search-bar">Enter search address:</div>
+    </header>
+<!-- Main Page Columns -->
+<div class="flex-1 flex flex-col sm:flex-row"></div>
+
+        <main class="flex-1 bg-blue-100">Main Content</main>
+        
+        <nav class="order-first sm:w-32 bg-white-200">Sidebar</nav>
+
+        <aside class="sm:w-32 bg-white-200">Right Sidebar</aside>
+    </div>
+</div>
+<footer class="bg-gray-100">Footer</footer>
+
     <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAc-vn35rr4MOnhvddt4qmf0EicQ-PUtM&callback=initMap"defer></script>
     <script src="./assets/script.js"></script>
+
 </body>
 </html>
