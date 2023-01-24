@@ -1,3 +1,14 @@
+
+#map {
+    height: 500px;
+    width: 500px;
+}
+/* html, body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+} */
+
 'colors': {
     '50': '#f6f6f7',
     '100': '#e2e1e6',
@@ -10,3 +21,4 @@
     '800': '#37333c',
     '900': '#141316',
 },
+
