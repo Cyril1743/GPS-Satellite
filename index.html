@@ -16,12 +16,13 @@
 </head>
 
 <body>
+
   <!-- <div class="container"> -->
     <div class="grid grid-rows-4 grid-cols-12 gap-2 h-screen text-6xl bg-dark textbg-gray-300">
      
         <header class="row-auto col-span-12  bg-gray-200  text-center">
           <h1 class="display-2 ">Gps Satellite </h1>
-          
+       
             <div class="search-bar" id="search-bar">
                 <form>   
                     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -37,22 +38,27 @@
         </header>
     <!-- Main Page Columns -->
         <!-- Left side  - nav -->
-        <nav class="col-span-1 bg-gray-400">
+        <!-- <nav class="col-span-1 bg-gray-400"> -->
             <!-- left sidebar text here, if any -->
-        </nav>
+        <!-- </nav> -->
 
         <!-- Main / center content here -->
-        <main class="col-span-8 bg-gray-500">
-            <div id="map-image">
-                <div id="map">
-                    Map Image
+        <main class="flex-grow col-span-8 bg-gray-500">
+            <div class="bg-gray-600">
+                <h2>Map Image</h2>
+            </div>
+            <div id="map-image" class="p-8 h-48 flex items-center justify-center bg-gray-600 h-full">
+                <div id="map" class="h-full">
                     <!-- map goes here -->
                 </div>
             </div>
-            <div id="satellite-image">
-                <div id="satellite">
-                    Satellite Image
+            <div class="bg-gray-700">
+                <h2>Satellite Image</h2>
+            </div>
+            <div id="satellite-image" class="pb-20 pt-8 h-48 flex items-center justify-center bg-gray-700 h-full">
+                <div id="satellite" class="h-full">
                     <!-- satellite image goes here -->
+                    <img src="https://via.placeholder.com/500">
                 </div>
             </div>
         </main>
@@ -61,12 +67,12 @@
        
          <div class="col-span-1 bg-gray-400"></div> 
         <!-- Right sidebar - aside -->
-        <aside class="row-auto col-span-12 bg-gray-300">
+        <!-- <aside class="h-screen fixed row-auto col-span-12 bg-gray-300"> -->
             <!-- Right sidebar text here, if any -->
-        </aside>
+        <!-- </aside> -->
     </div>
     <!-- Footer -->
-    <footer class="row-auto col-span-12 bg-gray-300">
+    <footer class="h-12 inset-x-0 fixed bottom-0 row-auto col-span-12 bg-gray-300">
         Footer
     </footer>
     <script
