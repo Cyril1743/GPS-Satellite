@@ -1,5 +1,5 @@
 //Import lon & lat variables from maps.js
-import { lat, long } from "./maps.js";
+//import { lat, long } from "./maps.js";
 //
 
 //Example Query:
@@ -48,4 +48,4 @@ function getApi() {
     });
 }
 
-search - bar.addEventListener("click", getApi);
+//search - bar.addEventListener("click", getApi);
