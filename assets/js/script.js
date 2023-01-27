@@ -1,5 +1,6 @@
 //Import lon & lat variables from maps.js
-//import { lat, long } from "./maps.js";
+import { lat, long } from "./maps.js";
+console.log(lat);
 //
 
 //Example Query:
@@ -14,20 +15,24 @@
 //&
 //api_key=DEMO_KEY
 
-var nasaSearch =
+var spectatorSearch =
+  //https:api.spectator.earth/overpass/?api_key=KEY&bbox=19.59,49.90,20.33,50.21&satellites=Sentinel-2A
   "https://api.nasa.gov/planetary/earth/imagery?lon=" +
-  long +
+  long1 +
   "&lat=" +
-  lat +
-  "&api_key=wYyOJOzsmeJEEGefWLuXKSD9WkHU5nxlaJUQ1biR";
+  lat1 +
+  long1 +
+  "&lat=" +
+  lat1 +
+  ;
 
-console.log(nasaSearch);
+console.log(spectatorSearch);
 
 //Use Fetch Request to ake finished nasaSearch string and send to NASA Earth API
 
 function getApi() {
   // Insert the API url to get a list of your repos
-  var requestUrl = nasaSearch;
+  var requestUrl = spectatorSearch;
 
   fetch(requestUrl)
     .then(function (response) {
