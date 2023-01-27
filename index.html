@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <!-- Tailwind Link -->
     <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
     <title>GPS Satellite</title>
-</head>
-
+  </head>
 <body>
     <div class="h-screen bg-gray-100">
         <header class="h-24 col-span-12 bg-gray-300">
@@ -33,41 +31,50 @@
         </header>
     <!-- Main Page Columns -->
 
-        <!-- Main / center content here -->
-        <main class="flex-grow col-span-8 bg-gray-500">
-            <div class="bg-gray-600">
-                <h2>Map Image</h2>
-            </div>
-            <div id="map-image" class="p-8 h-48 flex items-center justify-center bg-gray-600 h-full">
-                <div id="map" class="h-full">
-                    <!-- map goes here -->
-                </div>
-            </div>
-            <div class="bg-gray-700">
-                <h2>Satellite Image</h2>
-            </div>
-            <div id="satellite-image" class="pb-20 pt-8 h-48 flex items-center justify-center bg-gray-700 h-full">
-                <div id="satellite" class="h-full">
-                    <!-- satellite image goes here -->
-                    <img src="https://via.placeholder.com/500">
-                </div>
-            </div>
-        </main>
-
+      <!-- Main / center content here -->
+      <main class="flex-grow col-span-8 bg-gray-500">
+        <div class="bg-gray-600">
+          <h2>Map Image</h2>
+        </div>
+        <div
+          id="map-image"
+          class="p-8 h-48 flex items-center justify-center bg-gray-600 h-full"
+        >
+          <div id="map" class="h-full">
+            <!-- map goes here -->
+          </div>
+        </div>
+        <div class="bg-gray-700">
+          <h2>Satellite Image</h2>
+        </div>
+        <div
+          id="satellite-image"
+          class="pb-20 pt-8 h-48 flex items-center justify-center bg-gray-700 h-full"
+        >
+          <div id="satellite" class="h-full">
+            <!-- satellite image goes here -->
+            <img src="https://via.placeholder.com/500" />
+          </div>
+        </div>
+      </main>
     </div>
     <!-- Footer -->
-    <footer class="h-12 inset-x-0 fixed bottom-0 row-auto col-span-12 bg-gray-300">
-        Footer
+    <footer
+      class="h-12 inset-x-0 fixed bottom-0 row-auto col-span-12 bg-gray-300"
+    >
+      Footer
     </footer>
     <script
-  src="https://code.jquery.com/jquery-3.6.3.min.js"
-  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-  crossorigin="anonymous"></script>
-  <script src="./assets/js/maps.js"></script>
-  <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/maps.js" type="module"></script>
+    <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAc-vn35rr4MOnhvddt4qmf0EicQ-PUtM&callback=initMap&v=weekly"
       defer
     ></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
+
