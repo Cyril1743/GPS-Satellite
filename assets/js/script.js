@@ -21,7 +21,6 @@ var nasaSearch =
   lat +
   "&api_key=wYyOJOzsmeJEEGefWLuXKSD9WkHU5nxlaJUQ1biR";
 
-console.log(nasaSearch);
 
 //Use Fetch Request to ake finished nasaSearch string and send to NASA Earth API
 
