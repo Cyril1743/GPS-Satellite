@@ -26,8 +26,6 @@ var spectatorSearch =
   lat1 +
   ;
 
-console.log(spectatorSearch);
-
 //Use Fetch Request to ake finished nasaSearch string and send to NASA Earth API
 
 function getApi() {
