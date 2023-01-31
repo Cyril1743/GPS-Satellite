@@ -23,10 +23,8 @@ When an address is submitted
 Then the most recent air pollution data shows on the screen.
 ```
 
-##  Below are snapshots of various dynamically generated HTML/CSS and JavaScript sections:
-
-
-
+##  Below is a snapshot of various dynamically generated HTML/CSS and JavaScript sections:
+![Deployed_application](https://user-images.githubusercontent.com/118854114/215657788-fff9bb0f-11dc-44a2-bf4d-73ff7e4c0b04.png)
 
 
 ## APIs to be Used
