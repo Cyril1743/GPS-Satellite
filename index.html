@@ -12,15 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
     <title>GPS Satellite</title>
-</head>
-
-<body>
+  </head>
+  
+  <body>
     <div class="h-screen bg-gray-300">
         <header class="h-24 col-span-12 bg-gray-400">
-
-           <div class="bg-light-700 text-5xl text-center">
-            <h1>GPS SATELLITE</h1>
-            <div class="search-bar" id="search-bar">
+            <div class="p-3 bg-light-700 text-5xl text-center">
+                <h1>GPS Satellite</h1>
+            </div>
+            <div id="search-bar" class="search-bar">
                 <form>
                     <label for="default-search"
                         class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -44,7 +44,7 @@
 
         <!-- Main / center content here -->
         <main class="flex-grow col-span-8 bg-gray-500">
-            <div class="bg-gray-600">
+            <div class="pt-10 bg-gray-600">
                 <h2 class="text-4xl text-white text-center">Map Image</h2>
             </div>
             <div id="map-image" class="p-8 h-48 flex items-center justify-center bg-gray-600 h-full">
@@ -55,7 +55,7 @@
                     <!-- Recent searches go here -->
                 </div>
             </div>
-            <div class="bg-gray-700">
+            <div class="air-pollution pt-3 bg-gray-700">
                 <h2 class="text-4xl text-white text-center">Air Pollution Levels</h2>
 
             </div>
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </main>
-     </div>
+    </div>
     <!-- Footer -->
     <footer class="h-12 inset-x-0 fixed bottom-0 row-auto col-span-12 bg-gray-300">
         <!--Footer Text-->
@@ -96,5 +96,4 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAc-vn35rr4MOnhvddt4qmf0EicQ-PUtM&callback=initMap&v=weekly"
         defer></script>
 </body>
-
 </html>
