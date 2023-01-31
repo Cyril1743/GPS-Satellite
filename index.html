@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
-    <title>GPS SATELLITE</title>
-  </head>
+    <title>GPS Satellite</title>
+</head>
+
 <body>
     <div class="h-screen bg-gray-300">
         <header class="h-24 col-span-12 bg-gray-400">
@@ -49,68 +51,50 @@
                 <div id="map" class="h-full">
                     <!-- map goes here -->
                 </div>
+                <div id="recent-map" class="h-full">
+                    <!-- Recent searches go here -->
+                </div>
             </div>
             <div class="bg-gray-700">
-
-                <h2 class="text-4xl text-white text-center">Satellite Image</h2>
-                <h2>Air Pollution Level</h2>
+                <h2 class="text-4xl text-white text-center">Air Pollution Levels</h2>
 
             </div>
             <div id="pollution-container" div class="p-8 grid grid-cols-8 gap-6 bg-gray-700">
                 <div id="pollution" class="bg-gray-500 rounded shadow-lg">
-                    <div class="font-bold text-xl text-white mb-2">01</div>
                 </div>
                 <div id="pollution" class="bg-gray-500 rounded shadow-lg">
-                    <div class="font-bold text-xl text-white mb-2">02</div>
+
                 </div>
                 <div id="pollution" class="bg-gray-500 rounded shadow-lg">
-                    <div class="font-bold text-xl text-white mb-2">03</div>
+
                 </div>
                 <div id="pollution" class="bg-gray-500 rounded shadow-lg">
-                    <div class="font-bold text-xl text-white mb-2">04</div>
+
                 </div>
                 <div id="pollution" class="bg-gray-500 rounded shadow-lg">
-                    <div class="font-bold text-xl text-white mb-2">05</div>
+
                 </div>
                 <div id="pollution" class="bg-gray-500 rounded shadow-lg">
-                    <div class="font-bold text-xl text-white mb-2">06</div>
+
                 </div>
                 <div id="pollution" class="bg-gray-500 rounded shadow-lg">
-                    <div class="font-bold text-xl text-white mb-2">07</div>
+
                 </div>
                 <div id="pollution" class="bg-gray-500 rounded shadow-lg">
-                    <div class="font-bold text-xl text-white mb-2">08</div>
                 </div>
             </div>
         </main>
-
-          <div class="col-span-8 bg-gray-500"></div> 
-       
-          <div class="col-span-1 bg-gray-400"></div>  
-        <!-- Right sidebar - aside -->
-        <!-- <aside class="h-screen fixed row-auto col-span-12 bg-gray-300"> -->
-            <!-- Right sidebar text here, if any -->
-        <!-- </aside> -->
-    </div>
+     </div>
     <!-- Footer -->
     <footer class="h-12 inset-x-0 fixed bottom-0 row-auto col-span-12 bg-gray-300">
-      <!--Footer Text-->
+        <!--Footer Text-->
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="./assets/js/maps.js"></script>
-
-<script
+    <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAc-vn35rr4MOnhvddt4qmf0EicQ-PUtM&callback=initMap&v=weekly"
         defer></script>
-    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAc-vn35rr4MOnhvddt4qmf0EicQ-PUtM&callback=initMap&v=weekly"
-        defer></script>
-    <script src="./assets/js/script.js"></script>
-</body>
-</html>
-
