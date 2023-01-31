@@ -10,6 +10,7 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: lat, lng: long },
     zoom: 4,
+    gestureHandling: "cooperative"
   });
 }
 
@@ -22,20 +23,16 @@ searchButton.on("click", function (event) {
   var search = search.replace("&", "%26");
   var requestUrl = "https://maps.googleapis.com/maps/api/geocode/json?address=" + search + "&key=AIzaSyBAc-vn35rr4MOnhvddt4qmf0EicQ-PUtM";
 
-  fetch(requestUrl);
+  fetch(requestUrl)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
 
       var results = data;
-      console.log(results);
       lat = results.results[0].geometry.location.lat;
       long = results.results[0].geometry.location.lng;
-      map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: lat, lng: long },
-        zoom: 8,
-      })
+      makeMap(map, "map")
       getPollution()
     })
 })
@@ -47,13 +44,20 @@ function getPollution(){
     return response.json()
   })
   .then(function(data){
-    var pollution = $("#pollution").children()
+    var pollution = $("#pollution-container").children()
     var object = data.list[0].components
     var keys = Object.keys(object)
     var values = Object.values(object)
-    $.each(pollution, function(){
-      $(this).append("<h4>" + keys[i] + ": </h4>")
-      $(this).append("<div>" + values[i] + "</div>")
+    $.each(pollution, function(i){
+      $(this).append("<h4 class='font-bold text-xl text-white mb-2'>" + keys[i] + ": </h4>")
+      $(this).append("<div class='font-bold text-xl text-white mb-2'>" + values[i] + "</div>")
     })
+  })
+}
+function makeMap (varible, element){
+  varible = new google.maps.Map(document.getElementById(element), {
+    center: { lat: lat, lng: long },
+    zoom: 8,
+    gestureHandling: "cooperative"
   })
 }
