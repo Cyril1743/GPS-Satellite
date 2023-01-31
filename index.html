@@ -37,18 +37,24 @@
                 </form>
             </div>
         </header>
+
         <!-- Main / center content here -->
         <main class="flex-grow col-span-8 bg-gray-500">
             <div class="bg-gray-600">
-                <h2>Map Image</h2>
+                <h2 class="text-4xl text-white text-center">Map Image</h2>
             </div>
             <div id="map-image" class="p-8 h-48 flex items-center justify-center bg-gray-600 h-full">
                 <div id="map" class="h-full">
                     <!-- map goes here -->
+                    <div id="recent-app" class="">
+                        <!-- Recent searches go here -->
+                    </div>
                 </div>
             </div>
             <div class="bg-gray-700">
-                <h2>Air Pollution Level</h2>
+
+                <h2 class="text-4xl text-white text-center">Air Pollution Levels</h2>
+
             </div>
             <div id="pollution-container" div class="p-8 grid grid-cols-8 gap-6 bg-gray-700">
                 <div id="pollution" class="bg-gray-500 rounded shadow-lg">
@@ -85,8 +91,18 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="./assets/js/maps.js"></script>
+
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAc-vn35rr4MOnhvddt4qmf0EicQ-PUtM&callback=initMap&v=weekly"
+        defer></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAc-vn35rr4MOnhvddt4qmf0EicQ-PUtM&callback=initMap&v=weekly"
         defer></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
+
