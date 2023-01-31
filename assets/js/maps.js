@@ -36,25 +36,25 @@ searchButton.on("click", function (event) {
       getPollution()
     })
 })
-function getPollution(){
+function getPollution() {
   var apiKey = "82b6f72e416a643fc9c8ad973faf1aa5"
   var url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${long}&appid=${apiKey}`
   fetch(url)
-  .then(function(response){
-    return response.json()
-  })
-  .then(function(data){
-    var pollution = $("#pollution-container").children()
-    var object = data.list[0].components
-    var keys = Object.keys(object)
-    var values = Object.values(object)
-    $.each(pollution, function(i){
-      $(this).append("<h4 class='font-bold text-xl text-white mb-2'>" + keys[i] + ": </h4>")
-      $(this).append("<div class='font-bold text-xl text-white mb-2'>" + values[i] + "</div>")
+    .then(function (response) {
+      return response.json()
     })
-  })
+    .then(function (data) {
+      var pollution = $("#pollution-container").children()
+      var object = data.list[0].components
+      var keys = Object.keys(object)
+      var values = Object.values(object)
+      $.each(pollution, function (i) {
+        $(this).append("<h4 class='font-bold text-xl text-white mb-2'>" + keys[i] + ": </h4>")
+        $(this).append("<div class='font-bold text-xl text-white mb-2'>" + values[i] + "</div>")
+      })
+    })
 }
-function makeMap (varible, element){
+function makeMap(varible, element) {
   varible = new google.maps.Map(document.getElementById(element), {
     center: { lat: lat, lng: long },
     zoom: 8,
