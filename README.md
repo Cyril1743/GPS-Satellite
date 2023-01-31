@@ -38,7 +38,7 @@ Google Maps API and Weather API.
 ## Decomposition and Rough Breakdown of Tasks
 
 Alan and David: JavaScript
-Andrei, Emmanual, and Danielle : HTML and CSS
+Andrei, Emmanuel, and Danielle : HTML and CSS
 
 
 
@@ -59,7 +59,7 @@ https://github.com/Cyril1743/GPS-Satellite
 
 # Authors
 
-- Alan, David, Andrei, Emmanual, and Danielle.
+- Alan, David, Andrei, Emmanuel, and Danielle.
 - Air Pollution API concept.
 
 
