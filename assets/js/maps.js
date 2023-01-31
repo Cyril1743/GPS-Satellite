@@ -77,7 +77,7 @@ searchButton.on("click", function (event) {
 
 function getPollution() {
   var apiKey = "82b6f72e416a643fc9c8ad973faf1aa5";
-  var url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${long}&appid=${apiKey}`;
+  var url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${long}&appid=${apiKey}`;
   fetch(url)
     .then(function (response) {
       return response.json();
