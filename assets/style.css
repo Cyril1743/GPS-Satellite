@@ -1,12 +1,24 @@
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: bolder;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 900;
+    font-weight: 300;
     font-style: bolder;
     letter-spacing: 1px;
     word-spacing: 1px;
     text-shadow: 3px 3px 5px rgb(14, 14, 14);
     text-decoration: underline;
-
 }
 
 #map {
@@ -26,5 +38,3 @@ h2 {
         '800': '#37333c',
         '900': '#141316',
 }
-
-,
