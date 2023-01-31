@@ -93,8 +93,8 @@ function getPollution() {
         );
         $(this).append(
           "<div class='font-bold text-xl text-white mb-2'>" +
-            values[i] +
-            "</div>"
+          values[i] +
+          "</div>"
         );
       });
     });
@@ -106,29 +106,4 @@ function makeMap(varible, element) {
     zoom: 8,
     gestureHandling: "cooperative",
   });
-}
-
-//TODO: Retrieve the last search value from local storage and render it to the page:
-function renderLastRegistered() {
-  var lastSearch = localStorage.getItem("lastSearch");
-  localStorage.setItem("lastSearch", searchValue);
-  var search = searchValue.replace(" ", "%20");
-  var search = search.replace("&", "%26");
-  var requestUrl =
-    "https://maps.googleapis.com/maps/api/geocode/json?address=" +
-    search +
-    "&key=AIzaSyBAc-vn35rr4MOnhvddt4qmf0EicQ-PUtM";
-
-  fetch(requestUrl)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      var results = data;
-      lat = results.results[0].geometry.location.lat;
-      long = results.results[0].geometry.location.lng;
-      var marker = new google.maps.Marker({
-        position: { lat: lat, lng: long },
-      });
-    });
 }
